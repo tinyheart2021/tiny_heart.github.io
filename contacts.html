@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiny Heart Orphan</title>
+<style>
+  #contact-us {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  .contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  label {
+    font-weight: bold;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #1877F2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #145e9e;
+  }
+</style>
+</head>
+<body style="background-color: lightblue;">
+<div style="text-align:center;">
+<img style="width:20%" src="logo-png.png"></div>
+<section id="contact-us">
+  <h2>Contact Us</h2>
+
+  <p>We'd love to hear from you! Whether you have a question, want to volunteer, or make a donation, reach out to us through the following channels:</p>
+
+  <!-- Contact Information -->
+  <div class="contact-info">
+    <p><strong>Phone:</strong> +1 (234) 567-890</p>
+    <p><strong>Email:</strong> <a href="mailto:support@tinyheartorphan.org">support@tinyheartorphan.org</a></p>
+    <p><strong>Address:</strong> 123 Heart Lane, Cityville, State, 12345</p>
+    <p><strong>Follow Us:</strong> 
+      <a href="https://www.facebook.com/tinyheartorphan" target="_blank">Facebook</a> | 
+      <a href="https://twitter.com/tinyheartorphan" target="_blank">Twitter</a> | 
+      <a href="https://www.instagram.com/tinyheartorphan" target="_blank">Instagram</a>
+    </p>
+  </div>
+
+  <!-- Contact Form -->
+  <h3>Send Us a Message</h3>
+  <form action="submit_form.php" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  
+
+  <p>We will respond to your message within 24-48 hours. Thank you for reaching out to Tiny Heart Orphan!</p>
+</section>
+</body>
+</html>

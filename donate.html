@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Heart Orphan - Donation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #ff6f61;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65c54;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;">
+
+    <header>
+        <h1>Tiny Heart Orphan</h1>
+        <p><div style="text-align:center;">
+<img style="width:20%" src="logo-png.png"></div><h3>Helping children build a brighter future</h3></p>
+    </header>
+<!---header--->
+<table border="0" width="100%" cellspacing="0"
+bgcolor="#673de6">
+<tr><td>
+<table border="0" width="85%" align="center" cellpadding="15">
+<tr>
+
+<td><a href="home1.html"><font color="white">Home</font></a></td>
+<td><a href="purpose1.html"><font color="white">Our Purpose</font></a></td>
+<td><a href="donate.html"><font color="white">Donate</font></a></td>
+<td><a href="contacts.html"><font color="white">Contact Us</font></a></td>
+<td><a href="registration.html"><font color="white">Login/Registration</font></a></td>
+
+</tr>
+
+</table>
+
+</td></tr>
+</table>
+
+    <div class="container">
+<h4>At Tiny Heart Orphan, we welcome various types of donations to support the well-being, growth, and future of the children under our care. Here’s how you can contribute:</h4>
+
+<br><br><h4>Monetary Donations<br><br></h4>
+
+Help cover essential needs like food, shelter, education, and healthcare for the orphans.
+Contributions can be one-time or recurring to ensure ongoing support.
+<br><br><h4>Clothing and Essentials<br><br></h4>
+
+Donate new or gently used clothing, shoes, and seasonal wear for children of all ages.
+Provide hygiene products such as soap, toothpaste, and other daily essentials.
+<br><br><h4>Education Supplies<br><br></h4>
+
+Support their learning by donating books, notebooks, stationery, backpacks, and other school supplies.
+Contribute to funding for educational programs, tuition fees, and skill-building workshops.
+<br><br><h4>Toys and Recreational Items <br><br></h4>
+
+Bring joy to their lives by donating toys, games, art supplies, and sports equipment.
+<br><br><h4>Volunteering<br><br></h4>
+
+Dedicate your time to mentoring, teaching, or organizing activities for the children.
+<br><br><h4>Food Donations<br><br></h4>
+
+Provide nutritious food supplies, fresh produce, or cooked meals for the children.
+Every donation, big or small, helps us nurture these tiny hearts with love, care, and opportunities for a brighter tomorrow. Thank you for your support</h4>
+        <h2>Make a Donation</h2>
+        <p>Your contribution can make a real difference in the lives of orphaned children. Thank you for your generosity!</p>
+        <form action="/process-donation" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="amount">Donation Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter donation amount (USD)" required>
+
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Add a message or dedication"></textarea>
+
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+
+            <button type="submit">Donate Now</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tiny Heart Orphan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
